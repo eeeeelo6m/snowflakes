@@ -2,19 +2,19 @@ import CLASS,random
 
 
 def add_snow_flakes():
-    global class_rect,y
-    class_rect = CLASS.Snowflake(y, random.randint(0, 500))
-    y=0
+    y = random.randint(1, 15) / 10
+    class_rect = CLASS.Snowflake(0, random.randint(0, 1049),y)
+    class_rects.append(class_rect)
+
 
 
 
 def step():
-    global y
-    class_rect.x+=0
-    y+=1
-    class_rect.obect_snowflake.y=y
+    for class_rect1 in class_rects:
+        class_rect1.dvigenie()
+    pass
 
 
 
-y=0
-class_rect = CLASS.Snowflake(y, random.randint(0, 500))
+
+class_rects = []

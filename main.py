@@ -14,7 +14,8 @@ while 1==1:
     controler.control()
     model.step()
     screen.fill([21, 232, 231])
-    model.class_rect.draw_snowflakes(screen)
+    for class_rect in model.class_rects:
+        class_rect.draw_snowflakes(screen)
 
 
     pygame.event.get()
