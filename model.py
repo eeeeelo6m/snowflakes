@@ -12,7 +12,7 @@ def add_snow_flakes():
 def step():
     for class_rect1 in class_rects:
         class_rect1.dvigenie()
-    pass
+
 
 
 
