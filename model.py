@@ -7,9 +7,16 @@ def add_snow_flakes():
     class_rects.append(class_rect)
 
 
+def del_snowflakes():
+    for class_rect in class_rects:
+        if class_rect.uhla_tha_screen()==True:
+            class_rects.remove(class_rect)
+
+
 
 
 def step():
+    del_snowflakes()
     for class_rect1 in class_rects:
         class_rect1.dvigenie()
 
