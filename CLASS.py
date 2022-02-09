@@ -1,6 +1,7 @@
 import pygame
 from pygame import draw,font
 pygame.init()
+
 f = font.match_font('centurygothic', True, False)
 shirpht_1=font.Font(f,37)
 class Snowflake:
