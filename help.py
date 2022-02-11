@@ -1,4 +1,5 @@
 import pygame
+pygame.init()
 def izmeni_kartinku(kartinka, shirina, visota, uberi_cvet, porog):
     kartinka = pygame.transform.scale(kartinka, [shirina, visota])
     kartinka = kartinka.convert()

@@ -1,4 +1,4 @@
-import pygame,model
+import pygame,model,modelview
 from pygame import event
 pygame.init()
 TIMER_SNOWFLAKE=pygame.event.custom_type()
@@ -11,3 +11,6 @@ def control():
             exit()
         if r.type==TIMER_SNOWFLAKE:
             model.add_snow_flakes()
+        if r.type==pygame.KEYDOWN and r.key==pygame.K_SPACE:
+            modelview.regim='game' if modelview.regim=='test' else 'test'
+

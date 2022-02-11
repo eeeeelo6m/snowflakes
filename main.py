@@ -1,5 +1,5 @@
-import pygame,time,controler,model,view
-from pygame import display
+import pygame,time,view,controler,model
+
 pygame.init()
 
 
