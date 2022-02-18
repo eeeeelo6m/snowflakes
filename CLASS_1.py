@@ -10,9 +10,9 @@ water_cartinca = help.izmeni_kartinku(water_cartinca, 50, 50, [230, 218, 0], 100
 
 
 class Water(CLASS.Snowflake):
-    def __init__(self, y, x):
-        CLASS.Snowflake.__init__(self,y,x,2)
-        self.a=5
+    def __init__(self, x, y):
+        CLASS.Snowflake.__init__(self,x,y,2)
+
 
     def draw_cartinca_snowflake(self, screen):
         screen.blit(water_cartinca, [self.rect_snowflake.x, self.rect_snowflake.y])

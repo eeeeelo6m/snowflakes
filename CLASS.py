@@ -9,7 +9,7 @@ snowflake_cartinca = pygame.image.load("picture/SNOWFLAKE.png")
 snowflake_cartinca = help.izmeni_kartinku(snowflake_cartinca, 50, 50, [255, 255, 255], 100)
 
 class Snowflake:
-    def __init__(self, y, x, speedy):
+    def __init__(self, x, y, speedy):
         self.y = y
         self.x = x
         self.speedy = speedy

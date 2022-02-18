@@ -1,10 +1,11 @@
-import CLASS,random,CLASS_1
+import CLASS,random,CLASS_1,pygame
+
 
 
 def add_snow_flakes():
     y = random.randint(1, 15) / 10
-    #class_rect = CLASS.Snowflake(0, random.randint(0, 1049),y)
-    class_rect = CLASS_1.Water(0, random.randint(0, 1049))
+    class_rect = CLASS.Snowflake(random.randint(0, 1049),0,y)
+
     class_rects.append(class_rect)
 
 
@@ -14,6 +15,9 @@ def del_snowflakes():
             class_rects.remove(class_rect)
 
 
+def stop(x,y):
+    class_rect = CLASS_1.Water(x,y)
+    class_rects.append(class_rect)
 
 
 def step():

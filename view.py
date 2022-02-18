@@ -12,6 +12,7 @@ print(font.get_fonts())
 
 
 def view():
+
     screen.fill([21, 232, 231])
     collichestvo = len(model.class_rects)
     shirpht_schet_snovflakes = shirpht.render(str(collichestvo), True, [46, 90, 192])

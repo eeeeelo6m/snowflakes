@@ -14,3 +14,13 @@ def control():
         if r.type==pygame.KEYDOWN and r.key==pygame.K_SPACE:
             modelview.regim='game' if modelview.regim=='test' else 'test'
 
+
+        if r.type == pygame.MOUSEBUTTONDOWN and r.button == pygame.BUTTON_LEFT:
+            model.stop(r.pos[0],r.pos[1])
+
+
+
+
+
+
+
