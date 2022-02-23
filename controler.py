@@ -3,6 +3,7 @@ from pygame import event
 pygame.init()
 TIMER_SNOWFLAKE=pygame.event.custom_type()
 pygame.time.set_timer(TIMER_SNOWFLAKE,2000)
+TIMER_SNOWFLAKE_MORGANIE=pygame.event.custom_type()
 
 def control():
     e=event.get()
@@ -17,6 +18,8 @@ def control():
 
         if r.type == pygame.MOUSEBUTTONDOWN and r.button == pygame.BUTTON_LEFT:
             model.stop(r.pos[0],r.pos[1])
+        if r.type == pygame.MOUSEBUTTONDOWN and r.button == pygame.BUTTON_RIGHT:
+            pass
 
 
 

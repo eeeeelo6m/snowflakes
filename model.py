@@ -16,8 +16,19 @@ def del_snowflakes():
 
 
 def stop(x,y):
-    class_rect = CLASS_1.Water(x,y)
-    class_rects.append(class_rect)
+    for class_rect1 in class_rects:
+        if class_rect1.rect_snowflake.collidepoint(x,y) and type(class_rect1)==CLASS.Snowflake:
+
+            class_rects.remove(class_rect1)
+            class_rect = CLASS_1.Water(class_rect1.x,class_rect1.y)
+            class_rects.append(class_rect)
+
+
+def zahvat(x,y):
+    for class_rect1 in class_rects:
+        if class_rect1.rect_snowflake.collidepoint(x,y) and type(class_rect1)==CLASS.Snowflake:
+            pass
+
 
 
 def step():

@@ -7,13 +7,14 @@ f = font.match_font('centurygothic', True, False)
 shirpht_1 = font.Font(f, 37)
 snowflake_cartinca = pygame.image.load("picture/SNOWFLAKE.png")
 snowflake_cartinca = help.izmeni_kartinku(snowflake_cartinca, 50, 50, [255, 255, 255], 100)
-
+snowflake_fioletovay_cartinca = pygame.image.load("picture/SNOWFLAKE.png")
+snowflake_fioletovay_cartinca = help.izmeni_kartinku(snowflake_fioletovay_cartinca, 50, 50, [255, 255, 255], 100)
 class Snowflake:
     def __init__(self, x, y, speedy):
         self.y = y
         self.x = x
         self.speedy = speedy
-
+        self.sostoynie='dvigenie'
         self.rect_snowflake = pygame.Rect(self.x, self.y, 50, 50)
         print('snowflaks was created')
 
