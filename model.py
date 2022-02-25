@@ -26,8 +26,12 @@ def stop(x,y):
 
 def zahvat(x,y):
     for class_rect1 in class_rects:
-        if class_rect1.rect_snowflake.collidepoint(x,y) and type(class_rect1)==CLASS.Snowflake:
-            pass
+        if class_rect1.rect_snowflake.collidepoint(x,y) and type(class_rect1) is CLASS.Snowflake:
+            class_rect1.sostoynie='perenos'
+
+
+def peredviganie_snowflake():
+    pass
 
 
 

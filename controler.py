@@ -19,7 +19,7 @@ def control():
         if r.type == pygame.MOUSEBUTTONDOWN and r.button == pygame.BUTTON_LEFT:
             model.stop(r.pos[0],r.pos[1])
         if r.type == pygame.MOUSEBUTTONDOWN and r.button == pygame.BUTTON_RIGHT:
-            pass
+            model.zahvat(r.pos[0],r.pos[1])
 
 
 
