@@ -27,8 +27,9 @@ class Snowflake:
 
 
     def dvigenie(self):
-        self.y += self.speedy
-        self.rect_snowflake.y = self.y
+        if self.sostoynie=='dvigenie':
+            self.y += self.speedy
+            self.rect_snowflake.y = self.y
 
     def uhla_tha_screen(self):
         if self.y >= 650:
@@ -49,3 +50,8 @@ class Snowflake:
         if self.izmenenie+self.speedy<=time.time() and self.color=='blue':
             self.izmenenie+=self.speedy
             self.color='fioletoviy'
+    def perenos(self,x,y):
+        self.x=x
+        self.y=y
+        self.rect_snowflake.x=self.x
+        self.rect_snowflake.y=self.y

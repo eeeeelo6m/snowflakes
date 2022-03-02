@@ -19,7 +19,9 @@ def control():
         if r.type == pygame.MOUSEBUTTONDOWN and r.button == pygame.BUTTON_LEFT:
             model.stop(r.pos[0],r.pos[1])
         if r.type == pygame.MOUSEBUTTONDOWN and r.button == pygame.BUTTON_RIGHT:
-            model.zahvat(r.pos[0],r.pos[1])
+            model.zahvat_2(r.pos[0],r.pos[1])
+        if r.type == pygame.MOUSEMOTION:
+            model.peredviganie_snowflake_2(r.pos[0],r.pos[1])
 
 
 
