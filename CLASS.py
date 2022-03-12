@@ -67,4 +67,4 @@ class Snowflake:
     @sostoynie.setter
     def sostoynie(self, value):
         self.sostoynie_snowflake=value
-        print('состояние изменилось на',value)
+        self.color = 'blue'

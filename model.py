@@ -67,5 +67,10 @@ def step():
         class_rect1.dvigenie()
 
 
+
 perenos = False
 class_rects = []
+rect_magazin=pygame.Rect([1050-130,0],[130,70])
+slot_snowflakes=CLASS.Snowflake(rect_magazin.x+10, 10, 0)
+slot_water=CLASS_1.Water(rect_magazin.x+70, 10)
+
