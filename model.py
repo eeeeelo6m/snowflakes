@@ -48,6 +48,7 @@ def peredviganie_snowflake(x, y):
             class_rect1.perenos(x, y)
 
 
+
 def pocupka(x,y):
     global perenos
     if slot_snowflake.rect_snowflake.collidepoint(x, y):
