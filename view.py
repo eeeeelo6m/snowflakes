@@ -18,7 +18,7 @@ def view():
     collichestvo = len(model.class_rects)
     shirpht_schet_snovflakes = shirpht.render(str(collichestvo), True, [46, 90, 192])
     pygame.draw.rect(screen,[133,45,27],model.rect_magazin)
-    model.slot_snowflakes.draw_cartinca_snowflake(screen)
+    model.slot_snowflake.draw_cartinca_snowflake(screen)
     model.slot_water.draw_cartinca_snowflake(screen)
     for class_rect in model.class_rects:
         if modelview.regim=='test':
